@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="reset.css">
+		<style>
+			.wrap {
+				width: 1328px;
+				display: flex;
+				flex-wrap: wrap;
+				margin: auto;
+
+			}
+
+			.column {
+				width: 300px;
+				padding: 5px;
+				margin: 10px;
+				border: 1px solid #fff;
+				color: #333;
+				transition: all 1s;
+				font-size: 18px;
+				box-sizing: content-box;
+			}
+
+			.column:hover {
+				color: #f00;
+				transition: all 0.5s ease;
+				background-color: rgb(232, 239, 243);
+				border: 1px solid red;
+			}
+
+			.column img {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<!-- 傷腦筋 box-sizing 裡面 content-box =  width + margin + padding + border -->
+
+	<body>
+
+		<div class="wrap">
+			<div class="column"><img src='https://picsum.photos/200/200?random=1' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=2' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=3' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+
+
+			<div class="column"><img src='https://picsum.photos/200/200?random=4' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=5' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=6' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+		</div>
+	</body>
+
+</html>
