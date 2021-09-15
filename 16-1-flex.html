@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="reset.css">
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			/*
+				flex-direction: column;
+				justify-content: flex-start; 靠近開始處
+				justify-content: center; 中間分布
+				justify-content: flex-end; 靠近尾端
+				justify-content: space-evenly; 均勻分布
+				justify-content: space-around; 把剩下的空間平均分配到物件的左右
+				justify-content: space-between; 把剩下的空間平均分配到物件與物件的中間
+			*/
+			.wrap {
+				width: 960px;
+				border: 6px solid #f00;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: flex-end;
+			}
+
+			.item {
+				width: 200px;
+				height: 100px;
+				font-size: 50px;
+			}
+
+			.column-a {
+				background-color: #faa;
+			}
+
+			.column-b {
+				background-color: #afa;
+			}
+
+			.column-c {
+				background-color: #aaf;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="item column-a">a</div>
+			<div class="item column-b">b</div>
+			<div class="item column-c">c</div>
+		</div>
+	</body>
+
+</html>
