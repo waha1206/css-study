@@ -20,10 +20,12 @@
 			}
 
 			.header {
-				background-color: #ccc;
+				background-color: #001;
 				width: 100%;
-				position: relative;
+				position: fixed;
 				height: 50px;
+				z-index: 2;
+				margin: auto;
 			}
 
 			.logo {
@@ -32,7 +34,8 @@
 			}
 
 			.logo img {
-				vertical-align: middle;
+				vertical-align: bottom;
+				padding-left: 10px;
 			}
 
 			.menu_btn {
@@ -70,7 +73,7 @@
 			nav {
 				width: 80%;
 				height: calc(100vh - 50px);
-				background-color: #fcc;
+				background-color: #001;
 				position: absolute;
 				left: -100%;
 				top: 50px;
@@ -82,11 +85,86 @@
 				text-decoration: none;
 				border-bottom: 2px solid yellow;
 				padding: 10px 20px;
+				border-bottom: none;
+				color: yellow;
+			}
+
+			.column img {
+				width: 100%;
+			}
+
+			.wrap {
+
+				position: relative;
+				top: 50px;
 			}
 
 			#menu_control:checked~.header nav {
 
 				left: 0px;
+			}
+
+			@media screen and (min-width:768px) {
+				.menu_btn {
+					display: none;
+				}
+
+				.header {
+					display: flex;
+					justify-content: space-between;
+					background-color: #001;
+					align-items: center;
+					position: fixed;
+					z-index: 2;
+				}
+
+				nav {
+					display: flex;
+					position: relative;
+					left: 0px;
+					top: 0px;
+					width: auto;
+					height: auto;
+					background-color: transparent;
+					background-color: #001;
+				}
+
+				nav a {
+					border-bottom: none;
+					color: yellow;
+
+				}
+
+				.wrap {
+					width: 1328px;
+					display: flex;
+					flex-wrap: wrap;
+					margin: auto;
+					position: relative;
+					top: 50px;
+				}
+
+				.column {
+					width: 300px;
+					padding: 5px;
+					margin: 10px;
+					border: 1px solid #fff;
+					color: #333;
+					transition: all 1s;
+					font-size: 18px;
+					box-sizing: content-box;
+				}
+
+				.column:hover {
+					color: #f00;
+					transition: all 0.5s ease;
+					background-color: rgb(232, 239, 243);
+					border: 1px solid red;
+				}
+
+				.column img {
+					width: 100%;
+				}
 			}
 		</style>
 	</head>
@@ -106,6 +184,28 @@
 				<a href="#">link</a>
 				<a href="#">link</a>
 			</nav>
+		</div>
+		<div class="wrap">
+			<div class="column"><img src='https://picsum.photos/200/200?random=1' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=2' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=3' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+
+
+			<div class="column"><img src='https://picsum.photos/200/200?random=4' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=5' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
+			<div class="column"><img src='https://picsum.photos/200/200?random=6' alt=''>Lorem ipsum dolor sit amet
+				consectetur adipisicing elit. Reiciendis molestiae quos debitis, incidunt dolorem ipsam et adipisci libero,
+				pariatur id quo. Sint cumque soluta repudiandae molestiae repellendus veritatis temporibus sapiente?</div>
 		</div>
 	</body>
 

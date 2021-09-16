@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="reset.css">
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			/*
+				flex-direction: column;
+				justify-content: flex-start; 靠近開始處
+				justify-content: center; 中間分布
+				justify-content: flex-end; 靠近尾端
+				justify-content: space-evenly; 均勻分布
+				justify-content: space-around; 把剩下的空間平均分配到物件的左右
+				justify-content: space-between; 把剩下的空間平均分配到物件與物件的中間
+			*/
+			.wrap {
+				width: 960px;
+				height: 800px;
+				border: 4px solid #f00;
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-evenly;
+				align-items: stretch;
+				align-content: center;
+				flex-wrap: wrap-reverse;
+				margin: auto;
+				padding-top: 10px;
+				padding-bottom: 10px;
+
+			}
+
+			.item>p::first-letter {
+				font-size: 30px;
+				color: #f00;
+				font-weight: bold;
+			}
+
+			.item {
+				width: 200px;
+
+				padding: 5px;
+				font-size: 16px;
+				margin: 10px 0px;
+			}
+
+			.item p {
+				margin-top: 5px;
+				line-height: 1.3rem;
+				letter-spacing: 1px;
+			}
+
+			.item>img {
+				width: 100%;
+				display: none;
+			}
+
+			.column-1 {
+				background-color: #faa;
+
+			}
+
+			.column-2 {
+				background-color: #afa;
+
+			}
+
+			.column-3 {
+				background-color: #aaf;
+			}
+
+			.column-4 {
+				background-color: #fa0;
+			}
+
+			.column-5 {
+				background-color: #0af;
+			}
+
+			.column-6 {
+				background-color: #a0f;
+			}
+
+			.column-7 {
+				background-color: #fa6;
+			}
+
+			.column-8 {
+				background-color: #af6;
+			}
+
+			.column-9 {
+				background-color: #6af;
+			}
+
+			.column-10 {
+				background-color: #a9f;
+			}
+
+			.column-11 {
+				background-color: #af6;
+			}
+
+			.column-12 {
+				background-color: #fa9;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="item column-1">
+				<img src='https://picsum.photos/200/200?random=1' alt=''>
+				<p>
+					1
+					消費者緩緩全國選單職工一會兒，免費版財政上有上網出生如下文明演出，開始不多傳奇，網址讓我，點此品種把他創新有限房子那樣高雄大學建材文檔全體小姐咖啡，住房打印結構清晰高度怎麼辦有效右鍵逐漸很熱都要，當時主任周圍模式手機室內麻煩，證件市場價，加快醫療專輯達到。
+				</p>
+			</div>
+			<div class="item column-2"><img src='https://picsum.photos/200/200?random=2' alt=''>
+				<p>
+					2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste.</p>
+			</div>
+			<div class="item column-3"><img src='https://picsum.photos/200/200?random=3' alt=''>
+				<p>
+					3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-4">
+				<img src='https://picsum.photos/200/200?random=4' alt=''>
+				<p>
+					4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-5"><img src='https://picsum.photos/200/200?random=5' alt=''>
+				<p>
+					5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-6"><img src='https://picsum.photos/200/200?random=6' alt=''>
+				<p>
+					6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-7">
+				<img src='https://picsum.photos/200/200?random=7' alt=''>
+				<p>
+					7 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-8"><img src='https://picsum.photos/200/200?random=8' alt=''>
+				<p>
+					8 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<!-- <div class="item column-9"><img src='https://picsum.photos/200/200?random=9' alt=''>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-10">
+				<img src='https://picsum.photos/200/200?random=10' alt=''>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-11"><img src='https://picsum.photos/200/200?random=11' alt=''>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div>
+			<div class="item column-12"><img src='https://picsum.photos/200/200?random=12' alt=''>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ab quam, maxime
+					recusandae eaque cum repudiandae iste, laboriosam dicta adipisci alias cumque reiciendis temporibus labore?
+					Laudantium eveniet voluptatem nesciunt quidem.</p>
+			</div> -->
+
+
+	</body>
+
+</html>

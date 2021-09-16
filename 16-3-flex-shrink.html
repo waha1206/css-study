@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.wrap {
+
+				width: 960px;
+				margin: 200px auto;
+				border: 3px solid red;
+				padding: 050px;
+				display: flex;
+			}
+
+			.column {
+				width: 400px;
+				height: 100px;
+				padding: 10px;
+				font-size: 46px;
+
+			}
+
+			.column>p {
+				font-size: 16px;
+			}
+
+			/*
+			收縮比 flex-shrink
+			總比值 各個子項目寬度*收縮值，並且加總這所有子項目計算結果
+
+			超出值
+
+			扣除值
+
+			(子項目寬*收縮比/總比值) * 超出值 = 扣除值
+			*/
+			.item1 {
+				background: #faa;
+				flex-shrink: 0;
+
+			}
+
+			.item2 {
+				background: #afa;
+
+			}
+
+			.item3 {
+				background: #aaf;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="column item1">1<p>
+					原則我國日前，太陽眾人穿著機票外國資訊網中央，較高事情本帖神秘對話巨大人員快速安排這個需求本地這款大約，下載地址見到追求，一下子什麼事，幻想美女檔案視頻，方面反映由於排行榜放棄，各自深刻當前位置，別的循環學校近年來配合那些，不承擔居然電信我國效益隱藏版高。
+				</p>
+			</div>
+			<div class="column item2">2 <p>
+					這次幾乎女孩子才是管理系統，新聞信譽面向互相永遠離線關鍵我來頁面就不，男女天堂簡直一面電子不然一聲下來集體，上去大戰保障交給法人公司，大人小七代表資金給他不久主角任何人免費版觀看演出首次多多，上帝答應，並沒有有一定發言上午一般，下載運行平台生氣，具體階段。
+				</p>
+			</div>
+			<div class="column item3">3 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dicta quod
+					laudantium quis et esse ipsum perspiciatis velit eum explicabo repellendus ipsam reprehenderit, vitae
+					nesciunt! Nobis modi expedita minima sequi?</p>
+			</div>
+		</div>
+	</body>
+
+</html>
