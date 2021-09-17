@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="reset.css">
+		<style type="text/css">
+			.wrap {
+
+				outline: 2px solid red;
+				height: 500px;
+				width: 500px;
+				margin: 5px auto;
+				grid-template-columns: 100px 100px 100px 100px 100px;
+				grid-template-rows: 100px 100px 100px 100px 100px;
+				grid-template-areas:
+					"header header header . ."
+					"container container container . ."
+					""
+					""
+					"";
+			}
+
+			.wrap {
+				font-size: 50px;
+			}
+
+			.item-1 {
+				grid-area: header;
+
+				background-color: #faa;
+			}
+
+			.item-2 {
+				grid-area: container;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="wrap">
+			<div class="item-1">A</div>
+			<div class="item-2">B</div>
+			<div class="item-3">C</div>
+		</div>
+	</body>
+
+</html>
