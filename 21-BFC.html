@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.container {
+				overflow: hidden;
+
+			}
+
+			.item1 {
+				width: 200px;
+				height: 200px;
+				background-color: antiquewhite;
+				margin: 50px 0;
+
+			}
+
+			.item2 {
+				width: 200px;
+				height: 200px;
+				margin: 50px 0;
+				background-color: aqua;
+
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+			BFC的三個作用 overflow:hidden
+			1.兩個容器避免外邊距重疊 margin 可以疊加而不是取最大
+			2.清除浮動
+			3.阻止元素被浮動元素覆蓋 ex:第一個元素使用 float:left  第二個元素可以使用 overflow:hidden 去避免被覆蓋掉
+			BFC 的詳細說明
+			https://www.bilibili.com/video/BV1aZ4y1M7gW/?spm_id_from=333.788.recommend_more_video.-1
+
+		 -->
+		<div class="container">
+			<div class="item1"></div>
+		</div>
+		<div class="container">
+			<div class="item2"></div>
+		</div>
+
+
+	</body>
+
+</html>
