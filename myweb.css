@@ -7,8 +7,8 @@
 .wrapper {
 	display: grid;
 	grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-	grid-template-rows: repeat(3, 1fr);
-	background-color: #aaa;
+	grid-template-rows: 73px 1fr 200px;
+	/* background-color: #aaa; */
 }
 
 
@@ -47,7 +47,7 @@
 
 
 .main {
-	background-color: #bfb;
+	/* background-color: #bfb; */
 	grid-column: 2/8;
 	grid-row: 2/3;
 }
@@ -56,4 +56,35 @@
 	grid-column: 2/8;
 	grid-row: 3/4;
 	background-color: #fdd;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+.column {
+	width: 200px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #fff;
+	color: #333;
+	transition: all 1s;
+	font-size: 14px;
+	box-sizing: content-box;
+	line-height: 1.2em;
+}
+
+.column:hover {
+	color: #f00;
+	transition: all 0.5s ease;
+	background-color: rgb(232, 239, 243);
+	border: 1px solid red;
+}
+
+.column img {
+	width: 100%;
 }
