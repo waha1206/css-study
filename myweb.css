@@ -18,28 +18,66 @@
 	grid-row: 1/2;
 	background-color: #fff;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .logo {
-	padding: 10px;
+	padding: 10px 20px;
+	flex: 1;
 	/* background-color: #faa; */
 }
+
+.header-search {
+	width: 300px;
+	min-width: 300px;
+	font-size: 0px;
+}
+
+.keyword {
+	font-size: 14px;
+	display: inline-block;
+	line-height: 1.4;
+	/* height: 32px; */
+	padding: 6px 32px 5px 14px;
+	color: #39393e;
+	border: 1px solid #d3d3d5;
+	border-radius: 2px 0 0 2px;
+	/* border-left: 0; */
+}
+
+.submit {
+
+	padding: 10px 6px 9px;
+	font-size: 13px;
+	width: 70px;
+	background-color: #10567b;
+	color: #fff;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 0;
+	cursor: pointer;
+	line-height: 1;
+	border-radius: 0 2px 2px 0;
+}
+
 
 .service {
 	width: 600px;
 	color: #39393E;
 	font-size: 1em;
+	flex: 5;
 	/* background-color: green; */
 }
 
 .login-setting {
-	width: 100px;
+	flex: 1;
 	/* background-color: yellow; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 2em;
+
 }
 
 
