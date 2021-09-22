@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr repeat(6, 1fr) 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	background-color: #aaa;
+}
+
+
+
+.header {
+	grid-column: 2/8;
+	grid-row: 1/2;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	padding: 10px;
+	/* background-color: #faa; */
+}
+
+.service {
+	width: 600px;
+	color: #39393E;
+	font-size: 1em;
+	/* background-color: green; */
+}
+
+.login-setting {
+	width: 100px;
+	/* background-color: yellow; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+
+
+
+
+
+.main {
+	background-color: #bfb;
+	grid-column: 2/8;
+	grid-row: 2/3;
+}
+
+.footer {
+	grid-column: 2/8;
+	grid-row: 3/4;
+	background-color: #fdd;
+}
