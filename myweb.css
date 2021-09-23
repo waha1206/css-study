@@ -90,13 +90,10 @@
 	grid-row: 2/3;
 }
 
-.footer {
-	grid-column: 2/8;
-	grid-row: 3/4;
-	background-color: #fdd;
-}
+
 
 .main {
+	min-width: 500px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -125,4 +122,10 @@
 
 .column img {
 	width: 100%;
+}
+
+.footer {
+	grid-column: 2/8;
+	grid-row: 3/4;
+	background-color: #fdd;
 }
